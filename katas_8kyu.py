@@ -53,3 +53,20 @@ def zero_fuel(distance_to_pump, mpg, fuel_left):
 
 print(zero_fuel(50, 25, 2))
 print(zero_fuel(100, 50, 1))
+
+
+# Removing Elements
+# Take an array and remove every second element out of that array. Always keep the first element and start removing with the next element.
+
+# Example:
+
+# my_list = ['Keep', 'Remove', 'Keep', 'Remove', 'Keep', ...]
+# None of the arrays will be empty, so you don't have to worry about that!
+def remove_every_other(my_list):
+    return my_list[::2]
+    
+
+
+print(remove_every_other(['Hello', 'Goodbye', 'Hello Again']))                   
+print(remove_every_other([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+
