@@ -70,3 +70,13 @@ def remove_every_other(my_list):
 print(remove_every_other(['Hello', 'Goodbye', 'Hello Again']))                   
 print(remove_every_other([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 
+
+# Number toString
+# The code gives an error!
+
+# a = 123.toString()
+# Fix it!
+
+a = str(123)
+
+print(a, '123', 'Wrong!')
