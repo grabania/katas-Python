@@ -1,10 +1,11 @@
 # Difference of Volumes of Cuboids.
-# In this simple exercise, you will create a program that will take two lists of integers, a and b. Each list will consist of 3 positive integers above 0, representing the dimensions of cuboids a and b. You must find the difference of the cuboids' volumes regardless of which is bigger.
-
-# For example, if the parameters passed are([2, 2, 3], [5, 4, 1]), the volume of a is 12 and the volume of b is 20. Therefore, the function should return 8.
-
+# In this simple exercise, you will create a program that will take 
+# two lists of integers, a and b. Each list will consist of 3 positive 
+# integers above 0, representing the dimensions of cuboids a and b. 
+# You must find the difference of the cuboids' volumes regardless of which is bigger.
+# For example, if the parameters passed are([2, 2, 3], [5, 4, 1]), 
+# the volume of a is 12 and the volume of b is 20. Therefore, the function should return 8.
 # Your function will be tested with pre-made examples as well as random ones.
-
 # If you can, try writing it in one line of code.
 
 
@@ -14,15 +15,12 @@ def find_difference(a, b):
 
 print(find_difference([3, 2, 5], [1, 4, 4]))
 
+
 # Is it even?
 # In this Kata we are passing a number(n) into a function.
-
 # Your code will determine if the number passed is even(or not).
-
 # The function needs to return either a true or false.
-
 # Numbers may be positive or negative, integers or floats.
-
 # Floats are considered UNeven for this kata.
 
 
@@ -35,6 +33,7 @@ def is_even(n):
 
 print(is_even(0))
 print(is_even(0.5))
+
 
 # Will you make it?
 # You were camping with your friends far away from home,
@@ -55,25 +54,25 @@ print(zero_fuel(50, 25, 2))
 print(zero_fuel(100, 50, 1))
 
 
+
 # Removing Elements
-# Take an array and remove every second element out of that array. Always keep the first element and start removing with the next element.
-
+# Take an array and remove every second element out of that array. 
+# Always keep the first element and start removing with the next element.
 # Example:
-
 # my_list = ['Keep', 'Remove', 'Keep', 'Remove', 'Keep', ...]
 # None of the arrays will be empty, so you don't have to worry about that!
+
 def remove_every_other(my_list):
-    return my_list[::2]
-    
+    return my_list[::2]    
 
 
 print(remove_every_other(['Hello', 'Goodbye', 'Hello Again']))                   
 print(remove_every_other([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 
 
+
 # Number toString
 # The code gives an error!
-
 # a = 123.toString()
 # Fix it!
 
@@ -99,3 +98,17 @@ print(even_or_odd(2))
 print(even_or_odd(7))
 print(even_or_odd(1)) 
 print(even_or_odd(-1))
+
+
+# Opposite number
+# Very simple, given a number, find its opposite.
+# Examples:
+# 1: -1
+# 14: -14
+# -34: 34
+
+def opposite(number):
+    return number * (-1)
+
+
+print(opposite(1))
