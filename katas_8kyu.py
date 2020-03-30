@@ -80,3 +80,22 @@ print(remove_every_other([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 a = str(123)
 
 print(a, '123', 'Wrong!')
+
+
+
+# Even or Odd
+# Create a function(or write a script in Shell) that takes 
+# an integer as an argument and returns "Even" for even 
+# numbers or "Odd" for odd numbers.
+
+def even_or_odd(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+
+print(even_or_odd(2))
+print(even_or_odd(7))
+print(even_or_odd(1)) 
+print(even_or_odd(-1))
