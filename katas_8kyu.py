@@ -188,3 +188,17 @@ print(no_space(
 print(no_space('8aaaaa dddd r     '), '8aaaaaddddr')
 print(no_space('jfBm  gk lf8hg  88lbe8 '), 'jfBmgklf8hg88lbe8')
 print(no_space('8j aam'), '8jaam')
+
+
+# Reversed Strings
+# Complete the solution so that it reverses the string value passed into it.
+# solution('world')
+
+def solution(string):
+    return string[::-1]
+
+
+print(solution('world') == 'dlrow')
+print(solution('hello') == 'olleh')
+print(solution('') == '')
+print(solution('h') == 'h')
