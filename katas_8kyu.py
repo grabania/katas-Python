@@ -1,9 +1,9 @@
 # Difference of Volumes of Cuboids.
-# In this simple exercise, you will create a program that will take 
-# two lists of integers, a and b. Each list will consist of 3 positive 
-# integers above 0, representing the dimensions of cuboids a and b. 
+# In this simple exercise, you will create a program that will take
+# two lists of integers, a and b. Each list will consist of 3 positive
+# integers above 0, representing the dimensions of cuboids a and b.
 # You must find the difference of the cuboids' volumes regardless of which is bigger.
-# For example, if the parameters passed are([2, 2, 3], [5, 4, 1]), 
+# For example, if the parameters passed are([2, 2, 3], [5, 4, 1]),
 # the volume of a is 12 and the volume of b is 20. Therefore, the function should return 8.
 # Your function will be tested with pre-made examples as well as random ones.
 # If you can, try writing it in one line of code.
@@ -54,21 +54,19 @@ print(zero_fuel(50, 25, 2))
 print(zero_fuel(100, 50, 1))
 
 
-
 # Removing Elements
-# Take an array and remove every second element out of that array. 
+# Take an array and remove every second element out of that array.
 # Always keep the first element and start removing with the next element.
 # Example:
 # my_list = ['Keep', 'Remove', 'Keep', 'Remove', 'Keep', ...]
 # None of the arrays will be empty, so you don't have to worry about that!
 
 def remove_every_other(my_list):
-    return my_list[::2]    
+    return my_list[::2]
 
 
-print(remove_every_other(['Hello', 'Goodbye', 'Hello Again']))                   
+print(remove_every_other(['Hello', 'Goodbye', 'Hello Again']))
 print(remove_every_other([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
-
 
 
 # Number toString
@@ -81,10 +79,9 @@ a = str(123)
 print(a, '123', 'Wrong!')
 
 
-
 # Even or Odd
-# Create a function(or write a script in Shell) that takes 
-# an integer as an argument and returns "Even" for even 
+# Create a function(or write a script in Shell) that takes
+# an integer as an argument and returns "Even" for even
 # numbers or "Odd" for odd numbers.
 
 def even_or_odd(number):
@@ -96,7 +93,7 @@ def even_or_odd(number):
 
 print(even_or_odd(2))
 print(even_or_odd(7))
-print(even_or_odd(1)) 
+print(even_or_odd(1))
 print(even_or_odd(-1))
 
 
@@ -114,7 +111,6 @@ def opposite(number):
 print(opposite(1))
 
 
-
 # Sum of positive
 # You get an array of numbers, return the sum of all of the positives ones.
 # Example[1, -4, 7, 12] = > 1 + 7 + 12 = 20
@@ -123,8 +119,8 @@ print(opposite(1))
 def positive_sum(arr):
     s = 0
     for x in arr:
-       if x > 0:
-           s = s + x
+        if x > 0:
+            s = s + x
     return s
 
 
@@ -135,18 +131,17 @@ print(positive_sum([]))
 print(positive_sum([-1, -2, -3, -4, -5]))
 
 
-
 # Return Negative
-# In this simple assignment you are given a number 
+# In this simple assignment you are given a number
 # and have to make it negative. But maybe the number is already negative?
 # Example:
 # make_negative(1)  # return -1
 # make_negative(-5)  # return -5
 # make_negative(0)  # return 0
 # Notes:
-# The number can be negative already, in which case 
+# The number can be negative already, in which case
 # no change is required.
-# Zero(0) is not checked for any specific sign. 
+# Zero(0) is not checked for any specific sign.
 # Negative zeros make no mathematical sense.
 
 def make_negative(number):
@@ -160,7 +155,7 @@ print(make_negative(42))
 
 
 # Convert boolean values to strings 'Yes' or 'No'.
-# Complete the method that takes a boolean value and 
+# Complete the method that takes a boolean value and
 # return a "Yes" string for true, or a "No" string for false.
 
 def bool_to_word(boolean):
@@ -202,3 +197,24 @@ print(solution('world') == 'dlrow')
 print(solution('hello') == 'olleh')
 print(solution('') == '')
 print(solution('h') == 'h')
+
+
+# Convert a String to a Number!
+# We need a function that can transform a string into a number.
+# What ways of achieving this do you know?
+# Note: Don't worry, all inputs will be strings,
+# and every string is a perfectly valid representation of an integral number.
+# Examples
+# stringToNumber("1234") == 1234
+# stringToNumber("605") == 605
+# stringToNumber("1405") == 1405
+# stringToNumber("-7") == -7
+
+def string_to_number(s):
+    return int(s)
+
+
+print(string_to_number("1234"))
+print(string_to_number("605"))
+print(string_to_number("1405"))
+print(string_to_number("1234"))
